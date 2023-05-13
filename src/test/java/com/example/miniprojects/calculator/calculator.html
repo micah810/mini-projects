@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link href="calculator.css" rel="stylesheet">
+    <title>Micah's Calculator</title>
+    <script src="calculator.js"></script>
 </head>
 <body>
-$END$
+<div class="cal-grid">
+    <div class="output">
+<!--        this will be what was previosly calculated-->
+        <div class="previous-operand"></div>
+<!--        this will be what is currently calculated-->
+        <div class="current-operand"></div>
+    </div>
+<!--    row & col one-->
+    <div>123 * 456</div>
+    <button class="span-two">AC</button>
+    <button>Del</button>
+    <button>/</button>
+<!--    row & col two-->
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>*</button>
+<!--    row & col three-->
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>+</button>
+<!--    row & col four-->
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>-</button>
+<!--    row & col five-->
+    <button>.</button>
+    <button>0</button>
+    <button class="span-two">=</button>
+</div>
+
 </body>
 </html>
