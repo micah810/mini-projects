@@ -1,39 +1,43 @@
-*, * ::before, *::after{
+*, * ::before, *::after {
     box-sizing: border-box;
     font-family: Gotham Rounded, sans-serif;
     font-width: normal;
 }
 
-body{
+body {
     padding: 0;
     margin: 0;
     background: linear-gradient(to left, #FFFAF7, #FFE5D2);
 }
 
-.cal-grid{
+.cal-grid {
     display: grid;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    grid-template-columns: repeat(4,100px);
+    grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(100px, auto) repeat(5, 100px);
 }
 
-.cal-grid > button{
-cursor: pointer;
+.cal-grid > button {
+    cursor: pointer;
     font-size: 2rem;
     border: 1px solid white;
     outline: none;
     background-color: #E19B6E;
 }
 
-.span-two{
+.cal-grid > button:hover{
+    background-color: navajowhite;
+}
+
+.span-two {
     grid-column: span 2;
 }
 
-.output{
+.output {
     grid-column: 1 / -1;
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(0, 0, 0, .75);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,3 +46,11 @@ cursor: pointer;
     word-wrap: break-word;
     word-break: break-all;
 }
+
+.output .previous-operand {
+    color: rgba(225, 225, 225, .75);
+    font-size: 1.5rem;
+}
+
+
+
