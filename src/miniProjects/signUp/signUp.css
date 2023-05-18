@@ -6,6 +6,11 @@
     font-family: Quicksand, sans-serif;
 }
 
+body{
+    /*background-color: #FFFCF8;*/
+    background-color: #42505E;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -21,7 +26,7 @@ html {
 .form-wrapper {
     width: 100rem;
     height: 70rem;
-    background-color: #E19B6E;
+    background-color: #000276;
     border-radius: 3rem;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
     position: relative;
@@ -30,18 +35,18 @@ html {
 
 .green-bg {
     width: 100%;
-    /*width: 40%;*/
     height: 100%;
-    background: linear-gradient(to left, #E19B6E, #FFFAF7);
+    /*width: 40%;*/
+    background: linear-gradient(to left, #000276, #007CFF);
     position: absolute;
     top: 0;
     left: 0;
 
     z-index: 50;
-    transition: width 1.5s cubic-bezier(.19, 1, .22, 1);
+    transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-.container .change .green-bg{
+/*DONT FORGET SPACES BETWEEN SELECTORS*/
+.container.change .green-bg{
     width: 40%;
 }
 
@@ -64,12 +69,18 @@ html {
 .banner {
     position: absolute;
     top: 25%;
-    /*left: 5rem;*/
     left: -30rem;
+    /*left: 5rem;*/
     text-align: center;
     color: #FFF;
     width: 30rem;
     z-index: 100;
+
+    transition: left 0.8s;
+}
+
+.container.change .banner{
+    left: 5rem;
 }
 
 .banner h1 {
@@ -93,6 +104,12 @@ html {
     justify-content: space-around;!important;
     align-items: center;
     padding: 10rem 0;
+
+    transition: left 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.container.change .signup-form{
+    left: 40rem;
 }
 
 /*Create Account*/
@@ -109,21 +126,21 @@ html {
 .social-media i{
     width: 4rem;
     height: 4rem;
-    border: 0.1rem solid #FFE5D2;
+    border: 0.1rem solid #FFFAF7;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 2rem;
     font-size: 2rem;
-    color: #FFE5D2;
+    color: #FFFAF7;
 }
 
 /*"or use..."*/
 .signup-form p{
     font-size: 1.8rem;
     margin-bottom: 2rem;
-    color: #FFE5D2;
+    color: #FFFAF7;
 }
 
 .input-group{
@@ -142,7 +159,7 @@ html {
 /*person/evnelope/password icons*/
 .input-group i{
     position: center;
-    /*!*top: 50%;*!*/
+    /*top: 50%;*/
     /*left: 1rem;*/
     transform: translateX(-50%);
     font-size: 1.2rem;
