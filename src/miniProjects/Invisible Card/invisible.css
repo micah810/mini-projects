@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    font-family: 'Josefin Sana', sans-serif;
+    background: url("InvisibleWallpaper3.jpg") no-repeat center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+.card-wrapper{
+    height: 600px;
+    width: 450px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0));
+            url(micahLarson.JPG) no-repeat center;
+    border-radius: 5px;
+    transition: box-shadow 2s;
+}
+
+.card-wrapper:hover{
+    box-shadow: 0 0 100px 80px #4A41C3;
+}
+
+.card {
+    display: none;
+}
