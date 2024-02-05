@@ -24,7 +24,15 @@
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0));
             url(MicahLarson2.JPG) no-repeat center;
     border-radius: 5px;
+
+    overflow: hidden;
+
     transition: box-shadow 2s;
+}
+
+.card-wrapper:hover .card {
+    top: 0;
+
 }
 
 .card-img{
@@ -44,6 +52,9 @@
 
 
 .card {
+    position: absolute;
+    top: -100%;
+    /*above here is the transition of the whole card*/
     height: 100%;
     width: 100%;
     /*border-radius: inherit;*/
@@ -51,6 +62,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    transition: top 3s;
     background: linear-gradient(rgba(0,0,0,0) 40%, rgba(217,217,217));
 }
 
@@ -101,13 +113,29 @@
     text-decoration: none;
     width: 35px;
     height: 35px;
-    border: 1px solid #fff;
+    border: 3px solid #151234;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    color: #151234;
+    /*transition: border 3s;*/
 }
 
-.card-icon {
+.card-icon-link:hover {
+    border: 2px solid #4A41C3;
+    color: #4A41C3;
+    /*transition: 3s;*/
+}
 
+.card-btn{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background: #151234;
+    color: #FFFAF7;
+    cursor: pointer;
 }
