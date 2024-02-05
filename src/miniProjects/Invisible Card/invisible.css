@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/*Background*/
 .container{
     font-family: 'Josefin Sana', sans-serif;
     background: url("InvisibleWallpaper3.jpg") no-repeat center;
@@ -13,20 +14,17 @@
 }
 
 /*micah larson image 638x637*/
-.card-wrapper{
+.card-wrapper {
     height: 600px;
     width: 450px;
-    border: 10px solid #fff;
+    /*border: 10px solid #fff;*/
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0));
             url(MicahLarson2.JPG) no-repeat center;
     border-radius: 5px;
-
     overflow: hidden;
-
     transition: box-shadow 2s;
 }
 
@@ -43,26 +41,30 @@
     margin-top: 15px;
     border: 1px solid #D9D9D9;
     padding: 10px;
-    /*box-shadow: 20px 30px 50px rgba(0,0,0,0.5);*/
 }
 
 .card-wrapper:hover{
     box-shadow: 0 0 100px 80px #4A41C3;
 }
 
-
 .card {
     position: absolute;
-    top: -100%;
-    /*above here is the transition of the whole card*/
     height: 100%;
     width: 100%;
-    /*border-radius: inherit;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    transition: top 3s;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s;
+    /*background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0));*/
+
+}
+.fade-in:hover {
+    opacity: 1;
     background: linear-gradient(rgba(0,0,0,0) 40%, rgba(217,217,217));
 }
 
@@ -72,7 +74,7 @@
     /*font-weight: 300;*/
     /*text-transform: uppercase;*/
     /*letter-spacing: 3px;*/
-    background: rgba(8,10,64,1);
+    background: #151234;
     border-radius: 5px;
     width: 40%;
     height: 5%;
@@ -109,23 +111,21 @@
     justify-content: space-around;
 }
 
-.card-icon-link{
+.card-icon-link {
     text-decoration: none;
-    width: 35px;
-    height: 35px;
-    border: 3px solid #151234;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     color: #151234;
-    /*transition: border 3s;*/
+    font-size: 20px;
 }
 
 .card-icon-link:hover {
     border: 2px solid #4A41C3;
     color: #4A41C3;
-    /*transition: 3s;*/
 }
 
 .card-btn{
@@ -138,4 +138,8 @@
     background: #151234;
     color: #FFFAF7;
     cursor: pointer;
+}
+
+.card-btn:hover {
+    background: #4A41C3;
 }
