@@ -65,7 +65,7 @@
 }
 .fade-in:hover {
     opacity: 1;
-    background: linear-gradient(rgba(0,0,0,0) 40%, rgba(217,217,217));
+    background: linear-gradient(rgba(0,0,0,0) 35%, rgba(217,217,217));
 }
 
 .card-heading{
@@ -120,11 +120,11 @@
     align-items: center;
     border-radius: 5px;
     color: #151234;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .card-icon-link:hover {
-    border: 2px solid #4A41C3;
+    /*border: 2px solid #4A41C3;*/
     color: #4A41C3;
 }
 
